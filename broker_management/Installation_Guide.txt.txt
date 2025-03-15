@@ -1,0 +1,10 @@
+# Installation Guide - Broker Management Module
+1. Copy the `broker_management` folder into the Odoo custom addons directory.
+2. Restart the Odoo service.
+3. Log in as an admin and activate the Developer Mode.
+4. Go to "Apps" and update the module list.
+5. Search for "Broker Management" and install it.
+6. The module should now be visible under the menu "Real Estate > Brokers".
+
+# Note:
+This module was developed on Odoo 16. However, due to hardware limitations (Intel i3, low storage), I was unable to test the database functionality. Kindly install it on your system for full verification.

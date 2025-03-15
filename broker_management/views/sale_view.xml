@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_sale_tree" model="ir.ui.view">
+        <field name="name">sale.tree</field>
+        <field name="model">sale.sale</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="property_id"/>
+                <field name="broker_id"/>
+                <field name="sale_price"/>
+                <field name="commission"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_sale_form" model="ir.ui.view">
+        <field name="name">sale.form</field>
+        <field name="model">sale.sale</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="property_id"/>
+                        <field name="broker_id"/>
+                        <field name="sale_price"/>
+                        <field name="commission" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Menu & Actions -->
+    <menuitem id="menu_sale" name="Sales" parent="menu_broker_root"/>
+    <record id="action_sale" model="ir.actions.act_window">
+        <field name="name">Sales</field>
+        <field name="res_model">sale.sale</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

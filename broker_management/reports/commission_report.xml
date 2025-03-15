@@ -1,0 +1,9 @@
+<odoo>
+    <report
+        id="commission_report"
+        model="broker.management"
+        string="Broker Commission"
+        report_type="qweb-pdf"
+        name="broker_management.commission_report"
+        file="broker_management.commission_report"/>
+</odoo>
